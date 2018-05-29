@@ -1,0 +1,7 @@
+package com.bridgelabz.javaDI.consumer;
+
+import com.bridgelabz.javaDI.services.MessageService;
+
+public class MyDIApplication {
+	private MessageService service;
+}

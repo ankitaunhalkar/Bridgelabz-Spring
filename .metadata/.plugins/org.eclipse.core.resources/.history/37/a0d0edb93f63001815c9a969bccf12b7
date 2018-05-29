@@ -1,0 +1,7 @@
+package com.bridgelabz.javaDI.injector;
+
+public class MessageServiceInjector {
+	public void name() {
+		
+	}
+}

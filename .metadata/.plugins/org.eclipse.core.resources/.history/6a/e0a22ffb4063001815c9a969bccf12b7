@@ -1,0 +1,9 @@
+package com.bridgelabz.javaDI.test;
+
+public class MyMessageDITest {
+	String mail = "a@gmail.com";
+	String msg = "Hello to DI world";
+	String phone = "9874563210";
+	MessageServiceInjector injector = null;
+	
+}

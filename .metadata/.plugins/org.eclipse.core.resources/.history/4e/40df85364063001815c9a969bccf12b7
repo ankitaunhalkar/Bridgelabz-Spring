@@ -1,0 +1,12 @@
+package com.bridgelabz.javaDI.injector;
+
+import com.bridgelabz.javaDI.consumer.Consumer;
+
+public class EmailServiceInjector implements MessageServiceInjector{
+
+	@Override
+	public Consumer getConsumer() {
+		return new MyDIApplication(new EmailServiceInjector());
+	}
+
+}

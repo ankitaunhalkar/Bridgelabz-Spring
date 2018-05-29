@@ -1,0 +1,9 @@
+package com.bridgelabz.tightlyCoupled;
+
+public class LegacyTest {
+	public static void main(String[] args) {
+//		Application app = new Application();
+		Application app = new Application(new EmailService());
+		app.processMessage("Hello", "Madhuri");
+	}
+}

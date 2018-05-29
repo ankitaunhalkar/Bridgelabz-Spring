@@ -1,0 +1,6 @@
+package com.bridgelabz.tightlyCoupled;
+
+public class LegacyTest {
+	Application app = new Application();
+	
+}

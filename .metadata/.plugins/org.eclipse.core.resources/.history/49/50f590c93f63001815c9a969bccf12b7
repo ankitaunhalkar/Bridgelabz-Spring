@@ -1,0 +1,5 @@
+package com.bridgelabz.javaDI.injector;
+
+public interface MessageServiceInjector {
+	public Consumer getConsumer();
+}

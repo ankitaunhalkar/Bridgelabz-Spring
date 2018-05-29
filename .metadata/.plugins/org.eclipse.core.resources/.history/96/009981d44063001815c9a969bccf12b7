@@ -1,0 +1,6 @@
+package com.bridgelabz.javaDI.test;
+
+public class MyMessageDITest {
+	String mail = "a@gmail.com";
+	String msg = "Hello to DI world"
+}

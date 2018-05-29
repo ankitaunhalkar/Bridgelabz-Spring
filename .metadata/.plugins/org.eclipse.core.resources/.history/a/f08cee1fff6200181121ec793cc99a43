@@ -1,0 +1,6 @@
+package com.bridgelabz.servicesdemo
+public class App {
+	public static void main(String[] args) {
+		HelloWorld 
+	}
+}

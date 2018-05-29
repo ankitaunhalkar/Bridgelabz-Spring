@@ -1,0 +1,6 @@
+package com.bridgelabz.tightlyCoupled;
+
+public class Application {
+	private EmailService email = new EmailService();
+	
+}

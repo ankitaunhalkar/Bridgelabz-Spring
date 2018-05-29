@@ -1,0 +1,5 @@
+package com.bridgelabz.javaDI.consumer;
+
+public class MyDIApplication {
+
+}

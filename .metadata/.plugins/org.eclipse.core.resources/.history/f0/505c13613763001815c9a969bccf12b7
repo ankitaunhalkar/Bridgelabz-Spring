@@ -1,0 +1,9 @@
+package com.bridgelabz.tightlyCoupled;
+
+public class Application {
+	private EmailService email = new EmailService();
+	
+	public void processMessage(String msg, String rec) {
+		
+	}
+}

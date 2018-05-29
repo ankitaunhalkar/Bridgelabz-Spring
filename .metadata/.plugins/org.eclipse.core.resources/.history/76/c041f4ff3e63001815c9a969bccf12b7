@@ -1,0 +1,5 @@
+package com.bridgelabz.javaDI;
+
+public interface Consumer {
+	void processMessages(String msg, String rec);
+}
