@@ -1,6 +1,23 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <qualifiedTypeNameHistroy>
 <fullyQualifiedTypeName name="java.awt.HeadlessException"/>
+<fullyQualifiedTypeName name="com.bridgelabz.tightlyCoupled.Application"/>
+<fullyQualifiedTypeName name="com.bridgelabz.tightlyCoupled.EmailService"/>
+<fullyQualifiedTypeName name="com.bridgelabz.javaDI.MessageService"/>
+<fullyQualifiedTypeName name="com.bridgelabz.javaDI.services.MessageService"/>
+<fullyQualifiedTypeName name="com.bridgelabz.javaDI.services.EmailServiceImpl"/>
+<fullyQualifiedTypeName name="com.bridgelabz.javaDI.services.SMSServiceImpl"/>
+<fullyQualifiedTypeName name="com.bridgelabz.javaDI.consumer.MyDIApplication"/>
+<fullyQualifiedTypeName name="com.bridgelabz.javaDI.consumer.Consumer"/>
+<fullyQualifiedTypeName name="com.bridgelabz.javaDI.injector.EmailServiceInjector"/>
+<fullyQualifiedTypeName name="com.bridgelabz.javaDI.injector.MessageServiceInjector"/>
+<fullyQualifiedTypeName name="com.bridgelabz.javaDI.injector.SMSServiceInjector"/>
+<fullyQualifiedTypeName name="com.bridgelabz.services.MessageService"/>
+<fullyQualifiedTypeName name="com.bridgelabz.consumer.MyXMLApplication"/>
+<fullyQualifiedTypeName name="org.omg.CORBA.portable.ApplicationException"/>
+<fullyQualifiedTypeName name="com.bridgelabz.lifecycle.LifeCycle"/>
+<fullyQualifiedTypeName name="com.bridgelabz.innerBean.SpellChecker"/>
 <fullyQualifiedTypeName name="org.springframework.context.ApplicationContext"/>
 <fullyQualifiedTypeName name="org.springframework.context.support.ClassPathXmlApplicationContext"/>
+<fullyQualifiedTypeName name="com.bridgelabz.innerBean.TextEditor"/>
 </qualifiedTypeNameHistroy>
