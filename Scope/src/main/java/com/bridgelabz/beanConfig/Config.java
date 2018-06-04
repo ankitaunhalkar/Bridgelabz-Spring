@@ -9,7 +9,15 @@ public class Config {
 	@Bean
 	public Employee employee()
 	{
-		return new Employee();
+		Employee employee = new Employee();
+		employee.setAddress(address());
+		return employee;
 		
+	}
+	
+	@Bean
+	public Address address()
+	{
+		return new Address();
 	}
 }

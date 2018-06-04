@@ -2,15 +2,10 @@
 <section name="Workbench">
 	<section name="MavenProjectWizardArtifactPage">
 		<list key="groupId">
-			<item value="com.bridgelabz"/>
-			<item value="com.sample"/>
 		</list>
 		<list key="name">
 		</list>
 		<list key="artifactId">
-			<item value="scope"/>
-			<item value="demo"/>
-			<item value="springDI"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -36,6 +31,19 @@
 		<list key="issueManagementUrl">
 		</list>
 	</section>
+	<section name="MavenProjectImportWizardPage">
+		<list key="rootDirectory">
+			<item value="/home/bridgeit/sid/MicroservicesDemo/UserMicroservice"/>
+		</list>
+		<list key="projectNameTemplate">
+			<item value="[artifactId]"/>
+			<item value="[artifactId]-TRUNK"/>
+			<item value="[artifactId]-[version]"/>
+			<item value="[groupId].[artifactId]"/>
+			<item value="[groupId].[artifactId]-[version]"/>
+			<item value="[name]"/>
+		</list>
+	</section>
 	<section name="MavenProjectWizardArchetypePage">
 		<item value="All Catalogs" key="catalog"/>
 		<list key="projectNameTemplate">
@@ -49,10 +57,12 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="/home/bridgeit/eclipse-workspace/core-spring/Scope"/>
+			<item value="/home/bridgeit/eclipse-workspace/core-spring/Autowire/src/main/resources/applicationContext.xml"/>
+			<item value="/home/bridgeit/eclipse-workspace/core-spring/helloworld"/>
 			<item value="/home/bridgeit/eclipse-workspace/core-spring/springDI/src/main/java/com/bridgelabz/test/ClientApplication.java"/>
 			<item value="/home/bridgeit/eclipse-workspace/core-spring/JavaDI"/>
 			<item value="/home/bridgeit/eclipse-workspace/core-spring/JavaDI/src/com/bridgelabz/tightlyCoupled/LegacyTest.java"/>
-			<item value="/home/bridgeit/eclipse-workspace/core-spring/helloworld"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
@@ -65,10 +75,13 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.bridgelabz.Annotations"/>
 		</list>
 		<list key="groupId">
+			<item value="com.bridgelabz"/>
 		</list>
 		<list key="artifactId">
+			<item value="Annotations"/>
 		</list>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
