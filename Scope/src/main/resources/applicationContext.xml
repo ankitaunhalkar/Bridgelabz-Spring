@@ -5,11 +5,11 @@
 http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
 
 	<!-- <bean id="App" class="com.bridgelabz.singletonscope.Service"
-		scope="singleton"></bean>
+		scope="singleton"></bean>  -->
 
-	<bean id="AppPrototype"
-		class="com.bridgelabz.prototypescope.Service" scope="prototype"></bean> -->
-	<bean id="Lifecycle" class="com.bridgelabz.lifecycle.LifeCycle"
-		init-method="init" destroy-method="destroy"></bean>
+ 	<bean id="AppPrototype"
+		class="com.bridgelabz.prototypescope.Service" scope="prototype"></bean> 
+<!-- 	<bean id="Lifecycle" class="com.bridgelabz.lifecycle.LifeCycle
+		init-method="init" destroy-method="destroy"></bean> -->
 
 </beans>

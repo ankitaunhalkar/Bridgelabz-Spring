@@ -10,6 +10,6 @@ public static void main(String[] args) {
 	LifeCycle app = (LifeCycle) context.getBean("Lifecycle");
 	app.setMessage("Hello Bean");
 	app.getMessage();
-	((AbstractApplicationContext) context).registerShutdownHook();
+/*	((AbstractApplicationContext) context).registerShutdownHook();*/
 }
 }

@@ -4,9 +4,10 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Required;
 
 public class Employee {
+
 	private String name;
 	private String lname;
-	private Integer age;
+	
 	// private Address address;
 	
 	@Autowired(required=false)
@@ -18,15 +19,7 @@ public class Employee {
 		this.address = address;
 	}*/
 	
-	public Integer getAge() {
-		return age;
-	}
 
-/*	@Autowired(required=false)
-	public void setAge(Integer age) {
-		this.age = age;
-	}
-*/
 	public Address getAddress() {
 		return address;
 	}

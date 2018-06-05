@@ -5,7 +5,9 @@ public class Employee {
 	Address address;
 	String name;
 
-	
+	/*public Employee(Address address) {
+		this.address = address;
+	}*/
 	public Address getAddress() {
 		return address;
 	}
@@ -21,7 +23,7 @@ public class Employee {
 	public void details()
 	{
 		System.out.println("Name: Ankita, Location:"+address.getLocation());
-		//System.out.println("Name is :"+name);
+		System.out.println("Name is :"+name);
 	}
 	
 	

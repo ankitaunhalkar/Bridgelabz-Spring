@@ -9,7 +9,6 @@ public class App {
 		Employee emp = (Employee)context.getBean("emp");
 		System.out.println("Name is:"+emp.getName());
 		System.out.println("Lname is:"+emp.getLname());
-		System.out.println("Age is:"+emp.getAge());
 		emp.location();
 	}
 }

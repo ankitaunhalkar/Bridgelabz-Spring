@@ -4,20 +4,20 @@
 	xsi:schemaLocation="
 http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans-4.0.xsd">
 <!-- byName -->
-	<!-- <bean id = "address" class="com.bridgelabz.employee.Address"></bean>
+	<bean id = "address" class="com.bridgelabz.employee.Address"></bean>
 	<bean id="emp" class="com.bridgelabz.employee.Employee" autowire="byName"></bean>
- -->
+ 
  
   
 <!-- byType -->
-<!-- 	<bean id = "address" class="com.bridgelabz.employee.Address"></bean>
+ 	<!-- <bean id = "address" class="com.bridgelabz.employee.Address"></bean>
 	<bean id="emp" class="com.bridgelabz.employee.Employee" autowire="byType">
 		<property name="name" value="Ankita"></property>
 	</bean>  -->
 
 
 <!-- byConstructor -->
-	<bean id = "address" class="com.bridgelabz.employee.Address"></bean>
-	<bean id="emp" class="com.bridgelabz.employee.Employee" autowire="constructor"></bean>
+<!-- 	<bean id = "address" class="com.bridgelabz.employee.Address"></bean>
+	<bean id="emp" class="com.bridgelabz.employee.Employee" autowire="constructor"></bean> -->
 	
 </beans>
