@@ -1,7 +1,0 @@
-package com.bridgelabz.tightlyCoupled;
-
-public class LegacyTest {
-	public static void main(String[] args) {
-		
-	}
-}

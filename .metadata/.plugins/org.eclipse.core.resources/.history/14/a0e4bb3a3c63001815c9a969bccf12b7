@@ -1,5 +1,0 @@
-package com.bridgelabz.javaDI;
-
-public class EmailServiceImpl implements MessageService{
-
-}

@@ -36,4 +36,10 @@ public class Service {
 	public void sayHello(String message) {
 		System.out.println("Hello, "+message);
 	}
+
+	@Override
+	public String toString() {
+		return "Service [name=" + name + ", id=" + id + "]";
+	}
+	
 }

@@ -11,7 +11,7 @@ public class App
        ApplicationContext context = new ClassPathXmlApplicationContext("applicationContext.xml");
        Service service = (Service) context.getBean("sampleServiceProxy");
        try {
-       service.checkName();
+    	   service.checkName();
        }catch(Exception e) {
     	   System.out.println("SampleService: Method checkName() thrown exception");
        }

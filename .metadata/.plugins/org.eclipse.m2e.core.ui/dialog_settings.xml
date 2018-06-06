@@ -57,6 +57,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="/home/bridgeit/eclipse-workspace/core-spring/Aop/resources/applicationContext.xml"/>
 			<item value="/home/bridgeit/eclipse-workspace/core-spring/Scope"/>
 			<item value="/home/bridgeit/eclipse-workspace/core-spring/Autowire/src/main/resources/applicationContext.xml"/>
 			<item value="/home/bridgeit/eclipse-workspace/core-spring/helloworld"/>
@@ -75,12 +76,14 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.bridgelabz.springJDBC"/>
 			<item value="com.bridgelabz.Annotations"/>
 		</list>
 		<list key="groupId">
 			<item value="com.bridgelabz"/>
 		</list>
 		<list key="artifactId">
+			<item value="springJDBC"/>
 			<item value="Annotations"/>
 		</list>
 		<list key="projectNameTemplate">
