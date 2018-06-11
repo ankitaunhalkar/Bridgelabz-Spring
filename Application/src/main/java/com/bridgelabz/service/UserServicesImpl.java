@@ -9,30 +9,40 @@ import com.bridgelabz.model.User;
 
 @Service
 public class UserServicesImpl implements UserServices {
-
 	
 	private UserDao userDao;
 
-	public UserDao getUserDao() {
-		return userDao;
-	}
-	
 	@Autowired
 	public void setUserDao(UserDao userDao) {
 		this.userDao = userDao;
 	}
 
 	@Override
-	public void register(User user) {
-		
+	public int register(User user) {
+		int status = 0;
 		if(user != null) {
-			userDao.insert(user);
+			status = userDao.insert(user);
 		}
+		return status;
 	}
 
 	@Override
-	public void login(Login login) {
+	public User login(Login login) {
+		User user = null;
+		try {
+			if(login != null)
+			{
+				user = userDao.select(login.getEmail(), login.getPassword());
+			}
+		} catch (Exception e) {
+			System.out.println("No user found");
+		}
+		return user;
+	}
 
+	@Override
+	public User getByName(String name) {
+		return userDao.getByName(name);
 	}
 
 }

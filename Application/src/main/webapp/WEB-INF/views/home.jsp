@@ -3,12 +3,34 @@
 <html>
 <head>
 	<title>Home</title>
+	<link rel="stylesheet" href="<c:url value="/resources/css/style.css"/>">
 </head>
 <body>
-<h1>
-	Hello world!  
-</h1>
+<%
+		response.setHeader("Cache-Control", "no-cache,no-store,must-revalidate");	
+%>
+<h1> XYZ Company. <span><input type="button" value="Logout" onclick="location.href='logout'"  class="btncolor floating"/> </span></h1>
 
-<P>  The time on the server is ${serverTime}. </P>
+<hr>
+<div class="form">	
+<h3>DETAILS</h3>
+<hr>
+<table>
+  <tr>
+    <th>Name:</th>
+    <td>${username}</td>
+  </tr>
+  <tr>
+    <th>Email:</th>
+    <td>${email}</td>
+  </tr>
+  <tr>
+    <th>City:</th>
+    <td>${city}</td>
+  </tr>
+</table>
+</div>
+
+
 </body>
 </html>

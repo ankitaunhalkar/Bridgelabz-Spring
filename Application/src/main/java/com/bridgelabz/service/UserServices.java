@@ -5,7 +5,8 @@ import com.bridgelabz.model.User;
 
 public interface UserServices {
 	
-	void register(User user);
-	void login(Login login);
+	int register(User user);
+	User login(Login login);
+	User getByName(String name);
 	
 }

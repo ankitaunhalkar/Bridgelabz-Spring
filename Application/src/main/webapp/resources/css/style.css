@@ -19,3 +19,7 @@
 .btncolor:hover {
     background-color: #6495ED;
 }
+.floating {
+	float: right;
+	margin-right: 20px;	
+}

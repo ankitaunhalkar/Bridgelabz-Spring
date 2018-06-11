@@ -1,9 +1,13 @@
 package com.bridgelabz.dao;
 
+import java.sql.ResultSet;
+import java.sql.SQLException;
+
 import javax.sql.DataSource;
 
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.jdbc.core.JdbcTemplate;
+import org.springframework.jdbc.core.RowMapper;
 
 import com.bridgelabz.model.User;
 
@@ -16,12 +20,8 @@ public class UserDaoImpl implements UserDao {
 	JdbcTemplate jdbcTemplate;
 
 	@Override
-	public void insert(User user) {
-		System.out.println(user.getName());
-		System.out.println(user.getPassword());
-		System.out.println(user.getEmail());
-		System.out.println(user.getCity());
-		System.out.println("dao");
+	public int insert(User user) {
+
 		String query = "insert into users(name,password,email,city) values(?,?,?,?)";
 		Object[] object = new Object[] { user.getName(), user.getPassword(), user.getEmail(), user.getCity() };
 
@@ -37,12 +37,48 @@ public class UserDaoImpl implements UserDao {
 
 		}
 
+		return out;
+
 	}
 
 	@Override
-	public User select(String username, String password) {
-		// TODO Auto-generated method stub
-		return null;
+	public User select(String email, String password) {
+
+		String query = "select * from users where email=? and password=?";
+
+		User user = jdbcTemplate.queryForObject(query, new Object[] { email, password }, new RowMapper<User>() {
+
+			@Override
+			public User mapRow(ResultSet rs, int rowNum) throws SQLException {
+				User user = new User();
+				user.setName(rs.getString("name"));
+				user.setEmail(rs.getString("email"));
+				user.setCity(rs.getString("city"));
+				return user;
+			}
+		});
+
+		return user;
+
+	}
+
+	@Override
+	public User getByName(String name) {
+		String query = "select * from users where name=?";
+
+		User user = jdbcTemplate.queryForObject(query, new Object[] { name }, new RowMapper<User>() {
+
+			@Override
+			public User mapRow(ResultSet rs, int rowNum) throws SQLException {
+				User user = new User();
+				user.setName(rs.getString("name"));
+				user.setEmail(rs.getString("email"));
+				user.setCity(rs.getString("city"));
+				return user;
+			}
+		});
+
+		return user;
 	}
 
 }
