@@ -6,9 +6,7 @@
 	<link rel="stylesheet" href="<c:url value="/resources/css/style.css"/>">
 </head>
 <body>
-<%
-		response.setHeader("Cache-Control", "no-cache,no-store,must-revalidate");	
-%>
+
 <h1> XYZ Company. <span><input type="button" value="Logout" onclick="location.href='logout'"  class="btncolor floating"/> </span></h1>
 
 <hr>

@@ -15259,3 +15259,7 @@ org.eclipse.core.runtime.CoreException: Launch configuration ClientApplication r
 2018-06-11 18:40:19,941 [Worker-356] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
 2018-06-11 18:40:19,942 [Worker-356] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
 2018-06-11 18:40:19,942 [Worker-356] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-06-11 19:19:55,919 [Worker-369] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-06-11 19:19:55,919 [Worker-369] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2018-06-11 19:19:55,920 [Worker-369] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (UTF-8 actually) to copy filtered resources, i.e. build is platform dependent!
+2018-06-11 19:19:55,920 [Worker-369] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource

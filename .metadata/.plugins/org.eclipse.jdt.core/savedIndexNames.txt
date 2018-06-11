@@ -49,7 +49,6 @@ INDEX VERSION 1.130+/home/bridgeit/eclipse-workspace/core-spring/.metadata/.plug
 1034242344.index
 2517218838.index
 2246836969.index
-369874676.index
 138704981.index
 3590872327.index
 3293561388.index
