@@ -11,8 +11,9 @@
 
 
 	<bean id="userDao" class="com.bridgelabz.dao.UserDaoImpl"></bean>
+<!-- 	
 	<bean id="userServicesImpl"
-		class="com.bridgelabz.service.UserServicesImpl"></bean>
+		class="com.bridgelabz.service.UserServicesImpl"></bean> -->
 
 	<bean id="jdbcTemplate"
 		class="org.springframework.jdbc.core.JdbcTemplate">

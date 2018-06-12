@@ -27,10 +27,6 @@ public class LoginController {
 	@Autowired
 	private UserServices userServices;
 
-	public LoginController(UserServices userServices) {
-		this.userServices = userServices;
-	}
-
 	private static final Logger logger = LoggerFactory.getLogger(LoginController.class);
 
 	/**
@@ -48,7 +44,7 @@ public class LoginController {
 		User user = userServices.login(login);
 		if (user != null) {
 			HttpSession session = request.getSession();
-			session.setAttribute("User", user.getName());
+			session.setAttribute("User", user.getEmail());
 			return "redirect:load-data";
 		} else {
 			ModelAndView mav = new ModelAndView("login");
@@ -60,16 +56,16 @@ public class LoginController {
 	@RequestMapping(value = "/load-data", method = RequestMethod.GET)
 	public ModelAndView load(HttpSession session) {
 		
-		Object nameObj = session.getAttribute("User");
+		Object userObj = session.getAttribute("User");
 		
-		if (nameObj == null) {
+		if (userObj == null) {
 			ModelAndView mav = new ModelAndView("login");
 			mav.addObject("result", "Please log in");
 			return mav;
 		}
 		
-		String name = (String) nameObj;
-		User user = userServices.getByName(name);
+		String email =  (String) userObj;
+		User user = userServices.getByEmail(email);
 		ModelAndView mav = new ModelAndView("home");
 		mav.addObject("username", user.getName());
 		mav.addObject("city", user.getCity());
@@ -78,12 +74,12 @@ public class LoginController {
 	}
 
 	@RequestMapping("/logout")
-	public String logout(HttpServletRequest request, HttpServletResponse response) {
+	public ModelAndView logout(HttpServletRequest request, HttpServletResponse response) {
 
 		HttpSession httpSession = request.getSession(false);
 		httpSession.removeAttribute("User");
 		httpSession.invalidate();
-		return "login";
+		return new ModelAndView("login");
 	}
 
 }

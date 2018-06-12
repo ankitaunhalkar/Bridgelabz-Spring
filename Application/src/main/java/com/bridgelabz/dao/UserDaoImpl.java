@@ -2,6 +2,7 @@ package com.bridgelabz.dao;
 
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.util.List;
 
 import javax.sql.DataSource;
 
@@ -51,9 +52,7 @@ public class UserDaoImpl implements UserDao {
 			@Override
 			public User mapRow(ResultSet rs, int rowNum) throws SQLException {
 				User user = new User();
-				user.setName(rs.getString("name"));
 				user.setEmail(rs.getString("email"));
-				user.setCity(rs.getString("city"));
 				return user;
 			}
 		});
@@ -63,11 +62,11 @@ public class UserDaoImpl implements UserDao {
 	}
 
 	@Override
-	public User getByName(String name) {
-		String query = "select * from users where name=?";
-
-		User user = jdbcTemplate.queryForObject(query, new Object[] { name }, new RowMapper<User>() {
-
+	public User getByEmail(String email) {
+		String query = "select * from users where email=?";
+		 List<User> list = jdbcTemplate.query(query, new Object[] { email }, new RowMapper<User>()  {
+/*		User user = jdbcTemplate.queryForObject(query, new Object[] { email }, new RowMapper<User>() {
+*/
 			@Override
 			public User mapRow(ResultSet rs, int rowNum) throws SQLException {
 				User user = new User();
@@ -77,8 +76,9 @@ public class UserDaoImpl implements UserDao {
 				return user;
 			}
 		});
-
-		return user;
+		 System.out.println(list.size());
+		// return (User) list;
+		 return list.size() > 0 ? list.get(0) : null;
 	}
 
 }

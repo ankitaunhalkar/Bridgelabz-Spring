@@ -8,7 +8,7 @@
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
 <link rel="stylesheet" href="<c:url value="/resources/css/style.css"/>">
-<%-- <script type="text/javascript" src="<c:url value="/resources/js/validation.js"/>"></script>  --%>
+<script type="text/javascript" src="<c:url value="/resources/js/validation.js"/>"></script> 
 <title>Register</title>
 </head>
 <body>

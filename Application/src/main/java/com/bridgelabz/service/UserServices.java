@@ -7,6 +7,6 @@ public interface UserServices {
 	
 	int register(User user);
 	User login(Login login);
-	User getByName(String name);
+	User getByEmail(String name);
 	
 }

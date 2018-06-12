@@ -29,12 +29,14 @@ public class RegisterController {
 
 	@RequestMapping("registerProcess")
 	public ModelAndView registerProcess(HttpServletRequest request, HttpServletResponse response, @ModelAttribute("user") User user ) {
-		ModelAndView mav = new ModelAndView("login");
+		ModelAndView mav;
 		int status = userServices.register(user);
 		if(status==1) {
+			mav = new ModelAndView("login");
 			mav.addObject("result", "Successfully Registered! Login Here");
 		}else {
-			mav.addObject("result", "Sorry! Registertion Failed! Re-try Again!");
+			mav = new ModelAndView("register");
+			mav.addObject("message", "Sorry! Registertion Failed! Re-try Again!");
 		}
 		return mav;
 	}
