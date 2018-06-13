@@ -16,6 +16,7 @@ public class UserServicesImpl implements UserServices {
 	@Override
 	public int register(User user) {
 		int status = 0;
+		
 		if(user!=null) {
 			User usercheck = userDao.getByEmail(user.getEmail());
 			if(usercheck==null) {
@@ -37,7 +38,7 @@ public class UserServicesImpl implements UserServices {
 
 	@Override
 	public User login(Login login) {
-		User user = null;
+		/*User user = null;
 		try {
 			if (login != null) {
 				// User user = getUserBylogin.EmailId();
@@ -47,7 +48,16 @@ public class UserServicesImpl implements UserServices {
 		} catch (Exception e) {
 			System.out.println("No user found");
 		}
-		return user;
+		return user;*/
+		User loginCheck = null;
+		if (login != null) {
+			loginCheck = userDao.getByEmail(login.getEmail());
+			if((loginCheck!= null) && (loginCheck.getPassword().equals(login.getPassword())))
+			{
+				return loginCheck;
+			}
+		}
+		return loginCheck;
 	}
 
 	@Override

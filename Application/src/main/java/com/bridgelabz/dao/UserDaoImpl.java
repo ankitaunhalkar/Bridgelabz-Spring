@@ -14,8 +14,8 @@ import com.bridgelabz.model.User;
 
 public class UserDaoImpl implements UserDao {
 
-	@Autowired
-	DataSource datasource;
+	/*@Autowired
+	DataSource datasource;*/
 
 	@Autowired
 	JdbcTemplate jdbcTemplate;
@@ -42,7 +42,7 @@ public class UserDaoImpl implements UserDao {
 
 	}
 
-	@Override
+/*	@Override
 	public User select(String email, String password) {
 
 		String query = "select * from users where email=? and password=?";
@@ -60,7 +60,7 @@ public class UserDaoImpl implements UserDao {
 		return user;
 
 	}
-
+*/
 	@Override
 	public User getByEmail(String email) {
 		String query = "select * from users where email=?";
@@ -73,6 +73,7 @@ public class UserDaoImpl implements UserDao {
 				user.setName(rs.getString("name"));
 				user.setEmail(rs.getString("email"));
 				user.setCity(rs.getString("city"));
+				user.setPassword(rs.getString("password"));
 				return user;
 			}
 		});

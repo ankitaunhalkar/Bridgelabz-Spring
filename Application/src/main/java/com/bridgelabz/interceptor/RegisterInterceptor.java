@@ -29,6 +29,10 @@ public class RegisterInterceptor extends HandlerInterceptorAdapter {
 
 			ModelAndView mav = new ModelAndView("register");
 			mav.addObject("message", "Please enter all the field");
+			mav.addObject("name", name);
+			mav.addObject("password",password);
+			mav.addObject("email",email);
+			mav.addObject("city",city);
 			throw new ModelAndViewDefiningException(mav);
 
 		}
@@ -37,6 +41,10 @@ public class RegisterInterceptor extends HandlerInterceptorAdapter {
 
 			ModelAndView mav = new ModelAndView("register");
 			mav.addObject("message", "Please enter proper email & password");
+			mav.addObject("name", name);
+			mav.addObject("password",password);
+			mav.addObject("email",email);
+			mav.addObject("city",city);
 			throw new ModelAndViewDefiningException(mav);
 
 		} else
