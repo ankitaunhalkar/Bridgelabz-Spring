@@ -1,1 +1,1 @@
-{}
+[[{"location":"/usr/lib/jvm/java-8-openjdk-amd64","type":"JRE","hints":{"EXECUTION_ENVIRONMENT":"JavaSE-1.6"}},"jre:jre:1.6.0"],[{"location":"/home/bridgeit/.m2/repository/org/springframework/spring-webmvc/4.3.18.RELEASE/spring-webmvc-4.3.18.RELEASE.jar","type":"JAR","hints":{}},"ABSENT"],[{"location":"/home/bridgeit/eclipse-workspace/core-spring/ActiveMq","type":"PROJECT","hints":{"PROJECT_NAME":"ActiveMq"}},"com.bridgelabz:example:1.0.0"]]

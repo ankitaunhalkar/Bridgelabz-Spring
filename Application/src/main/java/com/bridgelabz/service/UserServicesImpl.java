@@ -56,6 +56,9 @@ public class UserServicesImpl implements UserServices {
 			{
 				return loginCheck;
 			}
+			else {
+				loginCheck = null;
+			}
 		}
 		return loginCheck;
 	}

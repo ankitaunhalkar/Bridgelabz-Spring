@@ -45,7 +45,7 @@
 		</list>
 	</section>
 	<section name="MavenProjectWizardArchetypePage">
-		<item value="All Catalogs" key="catalog"/>
+		<item value="internal" key="catalog"/>
 		<list key="projectNameTemplate">
 			<item value="[artifactId]"/>
 			<item value="[artifactId]-TRUNK"/>
@@ -57,6 +57,7 @@
 	</section>
 	<section name="MavenProjectWizardLocationPage">
 		<list key="location">
+			<item value="/home/bridgeit/eclipse-workspace/core-spring/MailService/src/main/java/com/bridgelabz/example"/>
 			<item value="/home/bridgeit/eclipse-workspace/core-spring/eXampleMvc/src/main/webapp/WEB-INF/spring/appServlet/servlet-context.xml"/>
 			<item value="/home/bridgeit/eclipse-workspace/core-spring/Annotations"/>
 			<item value="/home/bridgeit/eclipse-workspace/core-spring/Aop/resources/applicationContext.xml"/>
@@ -78,6 +79,7 @@
 	</section>
 	<section name="Maven2ProjectWizardArchifactPage">
 		<list key="package">
+			<item value="com.bridgelabz.Mailing"/>
 			<item value="com.bridgelabz.webExample"/>
 			<item value="com.bridgelabz.exampleMVC"/>
 			<item value="com.bridgelabz.springJDBC"/>
@@ -87,6 +89,7 @@
 			<item value="com.bridgelabz"/>
 		</list>
 		<list key="artifactId">
+			<item value="Mailing"/>
 			<item value="webExample"/>
 			<item value="ExampleMVC"/>
 			<item value="springJDBC"/>
